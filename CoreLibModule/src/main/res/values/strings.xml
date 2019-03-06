@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">智人</string>
+    <string name="good">赞</string>
+    <string name="yesterday">昨天</string>
+    <string name="The_day_before_yesterday">前天</string>
+    <string name="Days_ago">天前</string>
+    <string name="long_long_ago">很久以前</string>
+    <string name="An_hour_ago">小时前</string>
+    <string name="minutes_ago">分钟前</string>
+    <string name="just">刚刚</string>
+
+    <string name="send_verification_code">发送验证码</string>
+    <string name="sending">发送中...</string>
+    <string name="resend_verification_code">%1$s 后重新发送</string>
+</resources>

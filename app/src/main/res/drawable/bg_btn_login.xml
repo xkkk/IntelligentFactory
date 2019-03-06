@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false" >
+        <shape android:shape="rectangle">
+            <solid android:color="#2e366e"/>
+            <corners android:radius="25dp"/>
+            <size android:width="120dp" android:height="45dp" />
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/bg_login_btn"
+        android:state_enabled="true" />
+</selector>

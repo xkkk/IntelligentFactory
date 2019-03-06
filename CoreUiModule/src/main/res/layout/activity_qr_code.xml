@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.cme.coreuimodule.base.widget.CommonTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iv_right="@drawable/friends_data_icon_set"
+        app:showBack="true"
+        app:titleCenter="@string/qr_code" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_top_bar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_rootView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/sdf_image"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_chat_default_photo_square" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/sdf_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    tools:text="小张"
+                    android:textColor="@color/global_text_color"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_nick_name"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text=""
+                    android:textColor="@color/global_text_color_hint"
+                    android:textSize="@dimen/text_14" />
+
+                <ImageView
+                    android:id="@+id/sdf_sex"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/tv_nick_name"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/sdf_qrcode"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_below="@+id/sdf_image"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_width="240dp"
+                android:text=""
+                android:visibility="gone"
+                android:textSize="?attr/fontSize_2"
+                android:textColor="@color/global_text_color_middle"
+                android:gravity="center"
+                android:layout_height="240dp"
+                android:layout_marginBottom="40dp"
+                android:layout_below="@+id/sdf_image"
+                android:layout_centerHorizontal="true"
+               />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sdf_qrcode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/personal_info_qr_code_dialog_tip1"
+                android:textColor="@color/global_text_color_middle"
+                android:textSize="@dimen/text_14" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

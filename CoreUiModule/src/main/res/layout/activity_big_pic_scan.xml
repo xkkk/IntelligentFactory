@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="com.cme.coreuimodule.base.bigimage.BigPicScanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cme.coreuimodule.base.widget.ScrollControlViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.cme.coreuimodule.base.widget.CircleIndicator
+            android:id="@+id/circleIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+            app:ci_drawable="@drawable/white"
+            app:ci_drawable_unselected="@drawable/dot_indicator_un_selected"
+            app:ci_height="6dp"
+            app:ci_margin="5dp"
+            app:ci_width="6dp" />
+
+        <ImageView
+            android:id="@+id/iv_all_pic"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            android:src="@drawable/icon_see_all_pic" />
+
+        <ImageView
+            android:id="@+id/iv_downLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_download" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">智能人</string>
+
+    <string name="splash_start_experience">立即体验</string>
+
+    <!--登录页面-->
+    <string name="title_login">登录</string>
+    <string name="mobile_number">请输入手机号</string>
+    <string name="verification_code">短信验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="please_input_verification_code">请输入验证码</string>
+    <string name="start_now">立即开启</string>
+    <string name="start_now_tip">开启即表示同意《用户服务协议》</string>
+
+    <string name="error_tip_1">请输入手机号</string>
+    <string name="error_tip_2">请输入正确的手机号</string>
+    <string name="error_tip_3">请输入短信验证码</string>
+    <string name="error_tip_4">请输入验证码</string>
+
+    <string name="login_success">登录成功</string>
+
+
+    <!--完善个人信息-->
+    <string name="edit_information">完善个人信息</string>
+    <string name="invite_code">邀请码</string>
+    <string name="id_card">身份证号</string>
+    <string name="name">姓名</string>
+    <string name="nick_name">昵称</string>
+    <string name="open_intelligent_factory">开启我的智能工厂</string>
+
+    <string name="edit_info_error_tip_1">请填写身份证号</string>
+    <string name="edit_info_error_tip_2">身份证号格式不正确</string>
+    <string name="edit_info_error_tip_3">请填写真实姓名</string>
+    <string name="edit_info_error_tip_4">请填写您的昵称</string>
+
+
+</resources>

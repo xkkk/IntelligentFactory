@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            matchingFallbacks = ['debug', 'dev']
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/layout'] } }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api rootProject.ext.dependencies["recyclerview_v7"]
+    api rootProject.ext.dependencies["support_design"]
+    testImplementation 'junit:junit:4.12'
+
+    api project(':CoreLibModule')
+
+    //butterknife
+    api rootProject.ext.dependencies["butterknife"]
+    api rootProject.ext.dependencies["butterknife_annotations"]
+    annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
+    api rootProject.ext.dependencies["rxbinding"]
+    //baseadapter
+    api rootProject.ext.dependencies["base_rvadapter"]
+    api rootProject.ext.dependencies["base_adapter"]
+
+    api rootProject.ext.dependencies["pagerslidingtabstrip"]
+    api rootProject.ext.dependencies["statusbarutil"]
+    // webView
+    api rootProject.ext.dependencies["agentweb"]
+    api rootProject.ext.dependencies["agentweb_filechooser"]
+//    api rootProject.ext.dependencies["agentweb_download"]
+    // life cycle
+    api rootProject.ext.dependencies["rxlifecycle"]
+    api rootProject.ext.dependencies["rxlifecycle_components"]
+    // permission 6.0
+    api rootProject.ext.dependencies["rxpermissions"]
+
+}

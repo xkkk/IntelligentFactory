@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CoreLibModule/CoreLibModule.iml" filepath="$PROJECT_DIR$/CoreLibModule/CoreLibModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoreUiModule/CoreUiModule.iml" filepath="$PROJECT_DIR$/CoreUiModule/CoreUiModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IntelligentFactory.iml" filepath="$PROJECT_DIR$/.idea/modules/IntelligentFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/update-app/update-app.iml" filepath="$PROJECT_DIR$/update-app/update-app.iml" />
+    </modules>
+  </component>
+</project>

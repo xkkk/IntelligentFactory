@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white_to_grey"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="联系电话"
+        android:textColor="@color/global_text_color"
+        android:textSize="?attr/fontSize_2" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F3F3F3" />
+    <TextView
+        android:id="@+id/tv_two"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white_to_grey"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text=""
+        android:textColor="@color/global_text_color"
+        android:textSize="?attr/fontSize_2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#F3F3F3" />
+
+    <TextView
+        android:id="@+id/tv_show_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white_to_grey"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="取消"
+        android:textColor="#666666"
+        android:textSize="?attr/fontSize_2" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#366EB3</color>
+    <color name="colorPrimaryDark">#366EB3</color>
+    <color name="colorText">#222222</color>
+    <color name="colorAccent">#666666</color>
+    <color name="bg_color">#5e6e80</color>
+    <color name="black">#000000</color>
+
+    <color name="red">#FF0000</color>
+    <color name="push_title">#cc2929</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#DDDDDD</color>
+    <color name="global_blue">#40ADFF</color>
+    <color name="transparent">#00000000</color>
+    <!--全局背景颜色-->
+    <color name="global_bg_color">#F8F8F8</color>
+    <!--底部导航背景颜色-->
+    <color name="tab_background">#FCFCFC</color>
+    <!--首页底部导航文本颜色-->
+    <color name="tab_text_selected">#5e6e80</color>
+    <color name="tab_text_unselected">#885e6e80</color>
+    <!--全局大文本颜色-->
+    <color name="global_text_color">#000000</color>
+    <color name="global_text_333">#333333</color>
+    <color name="global_text_color_middle">#666666</color>
+    <color name="global_text_color_hint">#999999</color>
+    <color name="color_confirm_text">#0090f4</color>
+    <!--分割线颜色-->
+    <color name="global_split_line_color">#DDDDDD</color>
+    <color name="divide_line_color">#F0F0F0</color>
+    <color name="sidebar_press_bg">#E8E9EB</color>
+    <!--退出登录按钮的颜色-->
+    <color name="button_exit">#EEEEEE</color>
+    <color name="view">#EEEEEE</color>
+    <color name="background">#F9F9F9</color>
+    <color name="btn_del_friend">#F13838</color>
+    <color name="del">#ff6666</color>
+    <color name="tv_integral">#FF1E1E</color>
+
+    <!--红色未读消息背景颜色-->
+    <color name="bg_red_text">#F64B30</color>
+    <color name="item_swipe_agree">#40ACFF</color>
+    <color name="item_swipe_refuse">#999999</color>
+
+    <color name="login_tip_blue_color">#1870B8</color>
+    <color name="send_verify_code_color">#CC4C9DFB</color>
+    <color name="input_item_hint_color">#CCAAAAAA</color>
+
+    <color name="invite_join_circle_select_tv_color">#6DACFC</color>
+
+    <color name="circle_member_principal">#FFA506</color>
+    <color name="circle_member_manager">#40ACFF</color>
+    <color name="circle_member_member">#12BCA6</color>
+
+    <!--swipeRefreshLayout-->
+    <color name="pink_dark">#F6695F</color>
+    <color name="pink_light">#FF948E</color>
+    <color name="colorAccentDark">#7851A9</color>
+
+    <color name="favorites_yellow">#ffbb00</color>
+    <color name="find_circle_sort">#38414d</color>
+    <color name="find_circle_sort_pre">#6f81b9</color>
+
+    <color name="step_progress_color_2">#FF4E00</color>
+
+    <color name="work_state_personal">#33FF66</color>
+    <color name="work_state_intel">#FF3333</color>
+    <color name="work_state_mix">#FFFF33</color>
+
+    <color name="common_top_bar">#393A3F</color>
+    <color name="text_color">#576B95</color>
+    <color name="traslate">#11999999</color>
+    <color name="viewfinder_mask">#B2000000</color>
+</resources>

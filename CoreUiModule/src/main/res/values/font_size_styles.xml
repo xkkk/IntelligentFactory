@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 设置字体大小 theme -->
+    <style name="Theme_Text_0">
+        <item name="fontSize_0">10sp</item>
+        <item name="fontSize_1">12sp</item>
+        <item name="fontSize_2">14sp</item>
+        <item name="fontSize_3">16sp</item>
+        <item name="fontSize_4">18sp</item>
+        <item name="fontSize_5">20sp</item>
+        <item name="fontSize_6">22sp</item>
+        <item name="fontSize_7">24sp</item>
+        <item name="fontSize_8">26sp</item>
+        <item name="fontSize_9">28sp</item>
+        <item name="fontSize_10">30sp</item>
+        <item name="fontSize_11">32sp</item>
+        <item name="fontSize_12">34sp</item>
+        <item name="push_height">180dp</item>
+    </style>
+
+    <style name="Theme_Text_1">
+        <item name="fontSize_0">12sp</item>
+        <item name="fontSize_1">14sp</item>
+        <item name="fontSize_2">16sp</item>
+        <item name="fontSize_3">18sp</item>
+        <item name="fontSize_4">20sp</item>
+        <item name="fontSize_5">22sp</item>
+        <item name="fontSize_6">24sp</item>
+        <item name="fontSize_7">26sp</item>
+        <item name="fontSize_8">28sp</item>
+        <item name="fontSize_9">30sp</item>
+        <item name="fontSize_10">32sp</item>
+        <item name="fontSize_11">34sp</item>
+        <item name="fontSize_12">36sp</item>
+        <item name="push_height">190dp</item>
+    </style>
+
+    <style name="Theme_Text_2">
+        <item name="fontSize_0">14sp</item>
+        <item name="fontSize_1">16sp</item>
+        <item name="fontSize_2">18sp</item>
+        <item name="fontSize_3">20sp</item>
+        <item name="fontSize_4">22sp</item>
+        <item name="fontSize_5">24sp</item>
+        <item name="fontSize_6">26sp</item>
+        <item name="fontSize_7">28sp</item>
+        <item name="fontSize_8">30sp</item>
+        <item name="fontSize_9">32sp</item>
+        <item name="fontSize_10">34sp</item>
+        <item name="fontSize_11">36sp</item>
+        <item name="fontSize_12">38sp</item>
+         <item name="push_height">210dp</item>
+    </style>
+
+    <style name="Theme_Text_3">
+        <item name="fontSize_0">16sp</item>
+        <item name="fontSize_1">18sp</item>
+        <item name="fontSize_2">20sp</item>
+        <item name="fontSize_3">22sp</item>
+        <item name="fontSize_4">24sp</item>
+        <item name="fontSize_5">26sp</item>
+        <item name="fontSize_6">28sp</item>
+        <item name="fontSize_7">30sp</item>
+        <item name="fontSize_8">32sp</item>
+        <item name="fontSize_9">34sp</item>
+        <item name="fontSize_10">36sp</item>
+        <item name="fontSize_11">38sp</item>
+        <item name="fontSize_12">40sp</item>
+         <item name="push_height">220dp</item>
+    </style>
+
+    <style name="Theme_Text_4">
+        <item name="fontSize_0">18sp</item>
+        <item name="fontSize_1">20sp</item>
+        <item name="fontSize_2">22sp</item>
+        <item name="fontSize_3">24sp</item>
+        <item name="fontSize_4">26sp</item>
+        <item name="fontSize_5">28sp</item>
+        <item name="fontSize_6">30sp</item>
+        <item name="fontSize_7">32sp</item>
+        <item name="fontSize_8">34sp</item>
+        <item name="fontSize_9">36sp</item>
+        <item name="fontSize_10">38sp</item>
+        <item name="fontSize_11">40sp</item>
+        <item name="fontSize_12">42sp</item>
+         <item name="push_height">240dp</item>
+    </style>
+
+    <style name="Theme_Text_5">
+        <item name="fontSize_0">20sp</item>
+        <item name="fontSize_1">22sp</item>
+        <item name="fontSize_2">24sp</item>
+        <item name="fontSize_3">26sp</item>
+        <item name="fontSize_4">28sp</item>
+        <item name="fontSize_5">30sp</item>
+        <item name="fontSize_6">32sp</item>
+        <item name="fontSize_7">34sp</item>
+        <item name="fontSize_8">36sp</item>
+        <item name="fontSize_9">38sp</item>
+        <item name="fontSize_10">40sp</item>
+        <item name="fontSize_11">42sp</item>
+        <item name="fontSize_12">44sp</item>
+         <item name="push_height">250dp</item>
+    </style>
+</resources>

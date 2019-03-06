@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+    defaultConfig {
+        applicationId "com.cmeplaza.intelligentfactory"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode 3
+        versionName "1.1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            storeFile file(STORE_FILE_PATH)
+            storePassword STORE_PASSWORD
+            v2SigningEnabled false
+        }
+
+        debug {
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            storeFile file(STORE_FILE_PATH)
+            storePassword STORE_PASSWORD
+        }
+    }
+    buildTypes {
+        //测试环境
+        debug {
+            zipAlignEnabled false
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "DEV_MODE", "true"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationIdSuffix ".debug"
+            ndk {
+                debuggable true
+            }
+        }
+        //生产环境
+        release {
+            buildConfigField "boolean", "DEV_MODE", "false"
+            debuggable true
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ndk {
+                debuggable true
+            }
+        }
+    }
+
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "app_v${variant.versionName}_${variant.buildType.name}_${variant.versionCode}.apk".toLowerCase()
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:27.1.1'
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "com.android.support.constraint:constraint-layout:$constraint_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api project(':update-app')
+    // ButterKnife
+    annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
+
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.11'
+}

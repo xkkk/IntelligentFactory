@@ -1,0 +1,1 @@
+include ':app', ':CoreLibModule', ':CoreUiModule', ':update-app'

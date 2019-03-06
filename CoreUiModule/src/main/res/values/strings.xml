@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">智人</string>
+    <!--通用-->
+    <string name="common_back">返回</string>
+    <string name="repeat_to_finish">再按一次退出应用</string>
+    <string name="save">保存</string>
+    <string name="finish">完成</string>
+    <string name="confirm">确认</string>
+    <string name="ensure">确定</string>
+    <string name="unBind">解绑</string>
+    <string name="send_verification_code">发送验证码</string>
+    <string name="sending">发送中...</string>
+    <string name="resend_verification_code">%1$s 后重新发送</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="done">完成</string>
+    <string name="invite">邀请</string>
+    <string name="invited">已邀请</string>
+    <string name="more">更多</string>
+    <string name="more_information">更多信息</string>
+    <string name="share">分享</string>
+    <string name="share_to_download">推荐下载</string>
+    <string name="comment">评论</string>
+    <string name="refresh">刷新</string>
+    <string name="introduce">简介</string>
+    <string name="publish">发表</string>
+    <string name="scan">扫一扫</string>
+    <string name="submit">提交</string>
+    <string name="reply">回复</string>
+    <string name="scene">场景</string>
+    <string name="start_immediate">立即体验</string>
+    <string name="update">升级提示</string>
+    <string name="get_success">获取成功</string>
+    <string name="set_success">操作成功</string>
+    <string name="get_fail">获取失败，请重试</string>
+    <string name="upload_success">上传成功</string>
+    <string name="upload_fail">上传失败，请重试</string>
+    <string name="loading">加载中...</string>
+    <string name="login_ing">登录中...</string>
+    <string name="upload_ing">上传中...</string>
+    <string name="save_ing">保存中...</string>
+    <string name="downloading">下载中...</string>
+    <string name="send_success">发送成功</string>
+    <string name="change_success">修改成功</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="session_invalid">登录超时，请重新登录</string>
+    <string name="settings">设置</string>
+    <string name="notice_setting">通知设置</string>
+    <string name="circle_pic">相册</string>
+    <string name="circle_blockchain_robot">区块链机器人</string>
+    <string name="no_data">没有数据</string>
+    <string name="no_net">没有网络，请检查网络</string>
+    <string name="no_message">暂无消息！</string>
+    <string name="stick">置顶</string>
+    <string name="over">关闭</string>
+    <string name="open">打开</string>
+    <string name="permission">权限</string>
+    <string name="update_success">修改成功</string>
+    <string name="message">消息</string>
+    <string name="image">[图片]</string>
+    <string name="file">[文件]</string>
+    <string name="no_disturb">消息免打扰</string>
+    <string name="add_friend">添加朋友</string>
+    <string name="album">相册</string>
+    <string name="disable">禁用</string>
+    <!--错误-->
+    <string name="page_error">您访问的页面出现错误了！</string>
+
+    <!--权限-->
+    <string name="downloadPermissionTip">下载需要读写外部存储卡的权限，请先设置</string>
+    <string name="cameraPermissionTip">上传头像需要拍照和存储卡的权限，请先设置</string>
+    <string name="qrCodePermissionTip">扫描二维码需要打开相机和散光灯的权限,请先设置</string>
+    <string name="voicePermissionTip">录音需要录音和存储卡的权限,请先设置</string>
+    <string name="videoPermissionTip">视频需要摄像头和存储卡的权限,请先设置</string>
+    <string name="cancel">取消</string>
+    <string name="cut">剪切</string>
+    <string name="goSetting">去设置</string>
+    <string name="takePicPermissionTip">拍照需要相机权限</string>
+    <string name="choosePicPermissionTip">选取图片需要读取存储卡的权限</string>
+
+    <!--dialog-->
+    <string name="pic_tack_camera">拍照</string>
+    <string name="pic_tack_from_album">从手机相册选择</string>
+    <string name="delete_pic">删除图片</string>
+
+    <!--文件下载-->
+    <string name="file_scan">文件预览</string>
+    <string name="start_download">开始下载</string>
+    <string name="open_by_other_app">打开</string>
+    <string name="file_open_tip">本程序暂时不能打开该文件\n你可以用其他应用打开</string>
+
+    <!--拍照相关-->
+    <string name="camera_not_prepared">摄像头尚未准备好,发送失败</string>
+    <string name="selection_too_large">选择区域过大</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+
+    <!--图片剪切-->
+    <string name="action_take_photo">拍照</string>
+    <string name="action_clip">裁剪</string>
+    <string name="msg_camera_invalid_permission_denied">无法打开相机，可能是权限被拒绝</string>
+    <string name="msg_camera_invalid_initial_failed">相机初始化失败，无法打开相机</string>
+    <string name="msg_camera_invalid_unknown_error">无法打开相机，未知错误</string>
+    <string name="msg_could_not_save_photo">无法保存图片</string>
+    <string name="msg_clipping_image">正在裁剪图片</string>
+
+    <!--图片浏览页面-->
+    <string name="picture">图片</string>
+
+    <!--net error-->
+    <string name="net_error">网络异常，请重试</string>
+    <string name="unit_zhang">%1$d张</string>
+    <string name="clean">清空</string>
+
+    <string name="send_friend">发给朋友</string>
+    <string name="favorites">收藏</string>
+    <string name="backup_pic">保存图片</string>
+    <string name="demo">手机应用</string>
+
+    <!--二维码-->
+    <string name="qr_code">二维码</string>
+    <string name="personal_info_qr_code_dialog_tip1">扫一扫上面的二维码图案，加我好友</string>
+</resources>

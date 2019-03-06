@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--包名  com.cmeplaza.intelligent.preview-->
+    <!--华为推送appid-->
+    <string name="huawei_app_id">100234839</string>
+    <!--<string name="huawei_app_id">100234601</string>-->
+    <!--小米推送appid和appkey-->
+    <string name="xiaomi_app_id">\ 2882303761517699547</string>
+    <string name="xiaomi_app_kay">\ 5471769947547</string>
+    <!--友盟推送-->
+    <string name="umeng_app_key">5a5882a4f29d981cc20001ac</string>
+    <string name="umeng_app_secret">cc6b54d6b49b5dd583ab89c38261297c</string>
+    <!--bugly-->
+    <string name="bugly_app_id">1725a7a487</string>
+
+    <!--微信-->
+    <string name="WEIXIN_APP_ID">wxc11e81e656d41411</string>
+    <string name="WEIXIN_APP_SECRET">d3b0fa119e2824173e0c9447b7b6c78a</string>
+    <!--QQ-->
+    <string name="QQ_APP_ID">1106303696</string>
+    <string name="QQ_APP_SECRET">Zea4D35gt3RPGZXS</string>
+    <!--新浪微博-->
+    <string name="Sina_APP_ID">3246799287</string>
+    <string name="Sina_APP_SECRET">5d0cf6d74a45bb5652f20bb15b6776fd</string>
+
+
+    <!--包名  com.cmeplaza.intelligent-->
+    <!--华为推送appid-->
+    <!--<string name="huawei_app_id">100059119</string>-->
+    <!--&lt;!&ndash;小米推送appid和appkey&ndash;&gt;-->
+    <!--<string name="xiaomi_app_id">\ 2882303761517603421</string>-->
+    <!--<string name="xiaomi_app_kay">\ 5491760320421</string>-->
+    <!--&lt;!&ndash;友盟推送&ndash;&gt;-->
+    <!--<string name="umeng_app_key">59716497c62dca7a2b00149d</string>-->
+    <!--<string name="umeng_app_secret">3fb38f68134fee81b03fe46986042521</string>-->
+</resources>

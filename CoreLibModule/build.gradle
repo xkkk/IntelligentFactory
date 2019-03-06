@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion compileSdk
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            matchingFallbacks = ['debug', 'dev']
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api rootProject.ext.dependencies["appcompat_v7"]
+    testImplementation 'junit:junit:4.12'
+
+    //图片加载
+    api rootProject.ext.dependencies["glide"]
+    api rootProject.ext.dependencies["klog"]
+    api rootProject.ext.dependencies["photoview"]
+    // gson
+    api rootProject.ext.dependencies["gson"]
+    // retrofit + rxjava
+    api rootProject.ext.dependencies["rxandroid"]
+    api rootProject.ext.dependencies["rxjava"]
+    api rootProject.ext.dependencies["retrofit2"]
+    api rootProject.ext.dependencies["retrofit2_adapter_rxjava"]
+    api rootProject.ext.dependencies["retrofit2_converter_gson"]
+    api rootProject.ext.dependencies["retrofit2_converter_scalars"]
+    api rootProject.ext.dependencies["okhttp_ws"]
+    api rootProject.ext.dependencies["okhttp"]
+    // EventBus
+    api rootProject.ext.dependencies["eventbus"]
+}
