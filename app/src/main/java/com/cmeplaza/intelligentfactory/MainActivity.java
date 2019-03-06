@@ -7,10 +7,10 @@ import com.cme.corelib.CoreLib;
 import com.cme.corelib.event.UIEvent;
 import com.cme.corelib.http.MySubscribe;
 import com.cme.corelib.utils.RepeatHelper;
-import com.cme.corelib.utils.UiUtil;
 import com.cme.coreuimodule.base.activity.CommonBaseActivity;
 import com.cme.coreuimodule.base.utils.CommonDialogUtils;
 import com.cme.coreuimodule.base.web.SimpleWebFragment;
+import com.cmeplaza.intelligentfactory.login.InformationActivity;
 import com.cmeplaza.intelligentfactory.login.LoginActivity;
 import com.cmeplaza.intelligentfactory.utils.UserInfoUtils;
 import com.tbruyelle.rxpermissions.RxPermissions;
@@ -64,7 +64,8 @@ public class MainActivity extends CommonBaseActivity {
                 if (RepeatHelper.isFastDoubleAction()) {
                     super.onBackPressed();
                 } else {
-                    UiUtil.showToast(R.string.repeat_to_finish);
+//                    UiUtil.showToast(R.string.repeat_to_finish);
+                    nextPage(InformationActivity.class, true);
                 }
             }
         } else {

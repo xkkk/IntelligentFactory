@@ -4,7 +4,6 @@ import com.cme.corelib.http.MySubscribe;
 import com.cme.corelib.utils.SharedPreferencesUtil;
 import com.cme.coreuimodule.base.mvp.RxPresenter;
 import com.cmeplaza.intelligentfactory.MainActivity;
-import com.cmeplaza.intelligentfactory.guide.GuideActivity;
 import com.cmeplaza.intelligentfactory.guide.contract.SplashContract;
 import com.cmeplaza.intelligentfactory.utils.AppConstant;
 
@@ -35,11 +34,13 @@ public class SplashPresenter extends RxPresenter<SplashContract.IView> implement
                 .subscribe(new MySubscribe<Long>() {
                     @Override
                     public void onNext(Long aLong) {
-                        if (isFirst) {
-                            mView.nextPage(GuideActivity.class, true);
-                        } else {
-                            mView.nextPage(MainActivity.class, true);
-                        }
+//                        if (isFirst) {
+//                            mView.nextPage(GuideActivity.class, true);
+//                        } else {
+//                            mView.nextPage(MainActivity.class, true);
+//                        }
+
+                        mView.nextPage(MainActivity.class, true);
                     }
                 });
     }

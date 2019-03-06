@@ -5,8 +5,11 @@ import android.text.TextUtils;
 import com.cme.corelib.utils.SharedPreferencesUtil;
 import com.cmeplaza.intelligentfactory.BuildConfig;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Properties;
 
 /**
@@ -63,5 +66,23 @@ public class AppStringUtils {
         }
         return value;
     }
+
+    //修改
+    public static  String setValue(String key,String value) {
+        try {
+            Properties prop = new Properties();
+            prop.setProperty (key,value);
+            File file = new File("file:///android_asset/config_release.properties");
+            OutputStream fos = new FileOutputStream(file);
+            prop.store(fos, "Update '" + key + "' value");
+            fos.flush();
+            return value;
+        } catch (Exception e1) {
+            return null;
+        } finally {
+
+        }
+    }
+
 }
 

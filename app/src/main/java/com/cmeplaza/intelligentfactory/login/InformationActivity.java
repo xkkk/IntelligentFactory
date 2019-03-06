@@ -5,9 +5,12 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.cme.corelib.CoreLib;
 import com.cme.coreuimodule.base.activity.CommonBaseActivity;
 import com.cmeplaza.intelligentfactory.R;
+import com.cmeplaza.intelligentfactory.utils.AppConstant;
+import com.cmeplaza.intelligentfactory.utils.AppStringUtils;
 
 /**
  * Created by xiaozi on 2018/5/10.
@@ -19,6 +22,7 @@ public class InformationActivity extends CommonBaseActivity implements View.OnCl
     private EditText et_id_card;
     private EditText et_name;
     private EditText et_nick_name;
+    private EditText et_url;
     private TextView tv_open_intelligent_factroy;
 
 
@@ -38,6 +42,7 @@ public class InformationActivity extends CommonBaseActivity implements View.OnCl
         et_name = (EditText) findViewById(R.id.name);
         et_nick_name = (EditText) findViewById(R.id.et_nick_name);
         tv_open_intelligent_factroy = (TextView) findViewById(R.id.tv_open_intelligent_factory);
+        et_url = (EditText) findViewById(R.id.et_url);
         tv_open_intelligent_factroy.setOnClickListener(this);
     }
 
@@ -51,30 +56,10 @@ public class InformationActivity extends CommonBaseActivity implements View.OnCl
     }
 
     private void verify() {
-        String inviteCode = et_invit_code.getText().toString();
-        if (TextUtils.isEmpty(inviteCode)) {
-            Toast.makeText(this,"邀请码不能为空",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        String idCard = et_id_card.getText().toString();
-        if (TextUtils.isEmpty(idCard)) {
-            Toast.makeText(this,"身份证号不能为空",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        String name = et_name.getText().toString();
-        if (TextUtils.isEmpty(name)) {
-            Toast.makeText(this,"姓名不能为空",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        String nickName = et_nick_name.getText().toString();
-        if (TextUtils.isEmpty(nickName)) {
-            Toast.makeText(this,"昵称不能为空",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        next(inviteCode,idCard,name,nickName);
+      String url = et_url.getText().toString();
+      if(!TextUtils.isEmpty(url))
+        AppStringUtils.setValue("URL_H5",url);
+        CoreLib.initNet(AppConstant.BASE_URL, AppConstant.BASE_H5_URL);
     }
 
-    private void next(String inviteCode, String idCard, String name, String nickName) {
-
-    }
 }
